@@ -1,13 +1,19 @@
-function help(){
+function help() {
     console.log(`
-         There are some CLI commands used in different situations:
-         
-         1) node main.js organize <path>
-         2) node main.js help <path>
-         3) node main.js tree
+        These are some myCLI commands used in various situations:
+            1. node main.js tree <path>
+            2. node main.js organize <path>
+            3. node main.js help
     `);
 }
 
-module.export = {
-    help: help
+// function abc() {
+//     console.log("in help.js");
+// }
+
+module.exports = {
+    //key value
+    help: help,
+    // haathi: help
+    // ghoda:abc
 }
