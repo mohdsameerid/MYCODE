@@ -1,6 +1,5 @@
 // entry point of my command line 
 let helpFunc = require("./commands/help");
-
 let inputArr = process.argv.slice(2);
 // console.log(inputArr);
 let command = inputArr[0];
