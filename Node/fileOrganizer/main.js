@@ -7,12 +7,10 @@ let path = inputArr[1];
 switch (command) { //organizee
     case "tree":
         //call tree function
-        treeFunc.tree(path);
         // console.log("tree function called and executed succesfully on path " + path);
         break;
     case "organize":
         //call organize function
-        orgFunc.organize(path);
         // console.log("organize function called and executed succesfully on path "+ path);
         break;
     case "help":
