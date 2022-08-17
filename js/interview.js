@@ -343,3 +343,128 @@ for (const [x, y] of Object.entries(person4)) {
 // B: ["name", "Lydia"] and ["age", 21]
 // C: ["name", "age"] and undefined
 // D: Error
+
+
+// // < --------------Question 21----------------->
+
+// What is the output ?
+let newList = [1, 2, 3].push(4);
+console.log(newList.push(5));
+
+// A: [1, 2, 3, 4, 5]
+// B: [1, 2, 3, 5]
+// C: [1, 2, 3, 4]
+// D: Error
+
+// // < --------------Question 22----------------->
+// What is the output ?
+console.log('I want pizza'[0]);
+// A: """
+// B: "I"
+// C: SyntaxError
+// D: undefined
+
+// // < --------------Question 23----------------->
+// What is the output ?
+function checkAge(age) {
+  if (age < 18) {
+    const message = "Sorry, you're too young.";
+  } else {
+    const message = "Yay! You're old enough!";
+  }
+
+  return message;
+}
+
+console.log(checkAge(21));
+// A: "Sorry, you're too young."
+// B: "Yay! You're old enough!"
+// C: ReferenceError
+// D: undefined
+
+// // < --------------Question 24----------------->
+// What is the output ?
+const per = {
+  name: 'Lydia',
+  age: 21,
+};
+
+let city = per.city; //undefined
+city = 'Amsterdam';
+
+console.log(per);
+// A: { name: "Lydia", age: 21 }
+// B: { name: "Lydia", age: 21, city: "Amsterdam" }
+// C: { name: "Lydia", age: 21, city: undefined }
+// D: "Amsterdam"
+
+// // < --------------Question 25----------------->
+// What is the output ?
+// const user = { name: 'Lydia', age: 21 };
+// const admin = { admin: true, ...user };
+
+// console.log(admin);
+// A: { admin: true, user: { name: "Lydia", age: 21 } }
+// B: { admin: true, name: "Lydia", age: 21 }
+// C: { admin: true, user: ["Lydia", 21] }
+// D: { admin: true }
+
+// // < --------------Question 26----------------->
+// What is the output ?
+console.log(3 + 4 + '5');
+// A: "345"
+// B: "75"
+// C: 12
+// D: "12"
+
+// // < --------------Question 27----------------->
+// What is the output ?
+const person90 = {
+  name: 'Lydia',
+  age: 21,
+};
+
+for (const item in person90) {
+  console.log(item);
+}
+
+// A: { name: "Lydia" }, { age: 21 }
+// B: "name", "age"
+// C: "Lydia", 21
+// D: ["name", "Lydia"], ["age", 21]
+
+// // < --------------Question 28----------------->
+// What is the output ?
+const numbers = [1, 2, 3];
+numbers[10] = 11;
+console.log(numbers);
+// A: [1, 2, 3, 7 x null, 11]
+// B: [1, 2, 3, 11]
+// C: [1, 2, 3, 7 x empty, 11]
+// D: SyntaxError
+
+// // < --------------Question 29----------------->
+// What is the output ?
+const person373 = { name: 'Lydia' };
+
+function sayHi(age) {
+  return `${this.name} is ${age}`;
+}
+
+console.log(sayHi.call(person373, 21));
+console.log(sayHi.bind(person373, 21));
+// A: undefined is 21 Lydia is 21
+// B: function function
+// C: Lydia is 21 Lydia is 21
+// D: Lydia is 21 function
+
+// // < --------------Question 30----------------->
+// What is the output ?
+// var num = 8;
+// var num = 10;
+
+// console.log(num);
+// A: 8
+// B: 10
+// C: SyntaxError
+// D: ReferenceError Sent from my iPhone 
